@@ -1,0 +1,11 @@
+.header{
+	max-width: 1160px;
+	margin: auto;
+}
+.header__nav-bar{
+	max-width: 700px;
+}
+.header__text-box{
+	max-width: 500px;
+	margin-bottom: 70px;
+}

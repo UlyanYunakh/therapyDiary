@@ -11,14 +11,40 @@ html {
 	max-width: 1400px;
 }
 
-.btn_download {
+.section_flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section_text-container h1 {
+	font-family: 'Cambria';
+  font-size: 3em;
+  font-weight: 700;
+  color: #313342;
+}
+
+.section_text-container h2 {
+	display: block;
+	margin: 30px 0;
+}
+
+.section_text-container p {
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #313342;
+	line-height: 1.36;
+	display: block;
+	margin: 30px 0;
+}
+
+.btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 10px 30px;
 	font-size: 	1.2em;
   border-radius: 10px;
-  background-color: #fff;
   border: none;
   color: #313342;
   font-weight: 600;
@@ -26,10 +52,22 @@ html {
   line-height: 1.33;
 }
 
+.btn_download {
+	background-color: #fff;
+}
+
 .btn_download:focus, .btn_download:hover, .btn_download:active {
 	border: 1px solid #fff;
 	background-color: transparent;
 	color: #fff;
+}
+
+.btn_utp {
+	color: #fff;
+	background-color: #313342;
+	padding: 22px 30px;
+	max-width: 530px;
+	font-size: 1.4em;
 }
 
 /* header styles */
@@ -46,15 +84,4 @@ nav {
   color: #313342; 
 }
 
-.header_utp-container h1 {
-	font-family: 'Cambria';
-  font-size: 3em;
-  font-weight: 700;
-  color: #313342;
-}
-
-.header_utp-container h2 {
-	display: block;
-	margin: 30px 0;
-}
-
+/* main_info-right styles */

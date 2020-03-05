@@ -1,5 +1,5 @@
 body{
-	background: #a9a7b8;
+	background: white;
 }
 
 html {
@@ -84,14 +84,37 @@ nav {
   color: #313342; 
 }
 
+.logo_img:before {
+	content: url(img/background/for-logo.png);
+	position: absolute;
+	z-index: -1;
+	top: -90px;
+	left: -130px;
+}
+
+.right-background:before {
+	content: url(img/background/right.png);
+	position: absolute;
+	z-index: -1;
+	top: -120px;
+	left: -110px;
+}
+
+.header_utp:before {
+	content: url(img/background/left.png);
+	position: absolute;
+	z-index: -2;
+	top: -300px;
+	left: 0px;
+}
 /* main_info-right styles */
 
 /* footer styles */
-.footer__top-text{
+.footer__top-text {
 	text-align:center;
 }
 
-.footer__top-text p{
+.footer__top-text p {
 	font-size: 1.7em;
 }
 

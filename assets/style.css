@@ -85,3 +85,31 @@ nav {
 }
 
 /* main_info-right styles */
+
+/* footer styles */
+.footer__top-text{
+	text-align:center;
+}
+
+.footer__top-text p{
+	font-size: 1.7em;
+}
+
+.footer__bottom{
+	padding: 60px 0;
+	background: #313342;
+	color: #bcbcbc;
+	font-size: 1em;
+}
+
+.footer__bottom-left-text b{
+	color: white;
+}
+
+.footer__bottom a{
+	color: #bcbcbc;
+}
+
+.footer__bottom-left-text a{
+	text-decoration: underline;
+}

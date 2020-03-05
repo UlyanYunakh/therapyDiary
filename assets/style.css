@@ -84,10 +84,14 @@ nav {
   color: #313342; 
 }
 
+header {
+	overflow: hidden;
+}
+
 .logo_img:before {
 	content: url(img/background/for-logo.png);
 	position: absolute;
-	z-index: -1;
+	z-index: -100;
 	top: -90px;
 	left: -130px;
 }
@@ -95,17 +99,17 @@ nav {
 .right-background:before {
 	content: url(img/background/right.png);
 	position: absolute;
-	z-index: -1;
-	top: -120px;
-	left: -110px;
+	z-index: -100;
+	top: -230px;
+	left: 125px;
 }
 
-.header_utp:before {
+.header_utp-download-container:before {
 	content: url(img/background/left.png);
 	position: absolute;
-	z-index: -2;
-	top: -300px;
-	left: 0px;
+	z-index: -200;
+	top: -450px;
+	right: -500px;
 }
 /* main_info-right styles */
 

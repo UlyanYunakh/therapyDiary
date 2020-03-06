@@ -25,12 +25,14 @@ html {
 }
 
 .section_text-container h2 {
+	font-family: "Gilroy";
 	display: block;
 	margin: 30px 0;
 }
 
 .section_text-container p {
 	font-size: 1.4em;
+	font-family: "Gilroy";
 	font-weight: 600;
 	color: #313342;
 	line-height: 1.36;
@@ -54,6 +56,7 @@ html {
 
 .btn_download {
 	background-color: #fff;
+	font-family: "Gilroy";
 }
 
 .btn_download:focus, .btn_download:hover, .btn_download:active {
@@ -68,6 +71,11 @@ html {
 	padding: 22px 30px;
 	max-width: 530px;
 	font-size: 1.4em;
+	font-family: "Gilroy";
+}
+
+.main_info-left {
+	padding: 100px 0;
 }
 
 /* header styles */
@@ -78,6 +86,7 @@ nav {
 .header_nav-link {
 	padding: 0 20px;
 	font-size: 1.2em;
+	font-family: "Gilroy";
   font-weight: 600;
   line-height: 1.33;
   text-align: center;
@@ -85,6 +94,7 @@ nav {
 }
 
 header {
+	padding-bottom: 100px;
 	overflow: hidden;
 }
 
@@ -93,7 +103,7 @@ header {
 	position: absolute;
 	z-index: -100;
 	top: -90px;
-	left: -130px;
+	left: -180px;
 }
 
 .right-background:before {
@@ -109,7 +119,7 @@ header {
 	position: absolute;
 	z-index: -200;
 	top: -450px;
-	right: -500px;
+	right: -900px;
 }
 
 /* main_info-right styles */
@@ -122,7 +132,8 @@ header {
 	content: url(img/background/thanks-diary-bg.png);
 	position: absolute;
 	z-index: -100;
-	left: -320px;
+	left: -335px;
+	top: -30px;
 }
 
 .main_wish-diary-bg:before {
@@ -145,20 +156,28 @@ header {
 	content: url(img/background/diary-of-emotions-bg.png);
 	position: absolute;
 	z-index: -100;
-	top: -100px;
+	top: -90px;
 	left: -120px;
 }
 
 /* footer styles */
 .footer__top-text {
+	padding: 100px 0 100px;
 	text-align:center;
+}
+
+.footer__top-text h2 {
+	font-family: 'Cambria';
+	font-weight: 600;
 }
 
 .footer__top-text p {
 	font-size: 1.7em;
+	font-family: "Gilroy";
 }
 
 .footer__bottom{
+	font-family: "Gilroy";
 	padding: 60px 0;
 	background: #313342;
 	color: #bcbcbc;

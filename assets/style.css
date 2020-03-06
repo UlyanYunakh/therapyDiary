@@ -112,6 +112,41 @@ header {
 	right: -500px;
 }
 /* main_info-right styles */
+.main_info-left {
+	overflow: hidden;
+}
+
+/* main_***-bg styles */
+.main_thans-diary-bg:before {
+	content: url(img/background/thanks-diary-bg.png);
+	position: absolute;
+	z-index: -100;
+	right: 70px;
+}
+
+.main_wish-diary-bg:before {
+	content: url(img/background/wish-diary-bg.png);
+	position: absolute;
+	z-index: -100;
+	left: -70px;
+	top: -70px;
+}
+
+.main_action-fear-diary-bg:before {
+	content: url(img/background/action-fear-diary-bg.png);
+	position: absolute;
+	z-index: -100;
+	right: -20px;
+	top: -50px;
+}
+
+.main_diary-of-emotions-bg:before {
+	content: url(img/background/diary-of-emotions-bg.png);
+	position: absolute;
+	z-index: -100;
+	top: -100px;
+	left: -100px;
+}
 
 /* footer styles */
 .footer__top-text {

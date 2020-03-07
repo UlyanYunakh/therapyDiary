@@ -1,12 +1,10 @@
-body{
-	background: white;
-}
-
 html {
 	font-family: "Gilroy"; 
+	overflow-x: hidden;
 }
 
 /* general styles */
+
 .container {
 	max-width: 1400px;
 }
@@ -19,7 +17,7 @@ html {
 
 .section_text-container h1 {
 	font-family: 'Cambria';
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: 700;
   color: #313342;
 }
@@ -94,13 +92,8 @@ nav {
   color: #313342; 
 }
 
-header {
-	padding-bottom: 145px;
-	overflow: hidden;
-}
-
 .header_utp {
-	padding-top: 25px;
+	padding: 25px 50px 0;
 }
 
 .logo_img:before {
@@ -133,11 +126,13 @@ header {
 }
 
 /* main_info-right styles */
-.main_info-left {
-	overflow: hidden;
+
+.main_info {
+	padding: 150px 48px 0;
 }
 
 /* main_***-bg styles */
+
 .main_thans-diary-bg:before {
 	content: url(img/background/thanks-diary-bg.png);
 	position: absolute;
@@ -170,23 +165,30 @@ header {
 	left: -120px;
 }
 
-/* footer styles */
-.footer__top-text {
-	padding: 100px 0 100px;
+
+.download-section {
+	padding: 200px 0 100px;
 	text-align:center;
 }
 
-.footer__top-text h2 {
+.download-section h2 {
 	font-family: 'Cambria';
 	font-weight: 600;
 }
 
-.footer__top-text p {
+.download-section h2 {
+	font-family: 'Cambria';
+	font-weight: 600;
+}
+
+.download-section p {
 	font-size: 1.7em;
 	font-family: "Gilroy";
 }
 
-.footer__bottom{
+/* footer styles */
+
+footer{
 	font-family: "Gilroy";
 	padding: 60px 0;
 	background: #313342;
@@ -194,14 +196,14 @@ header {
 	font-size: 1em;
 }
 
-.footer__bottom-left-text b{
+.footer_-left-text b{
 	color: white;
 }
 
-.footer__bottom a{
+footer a{
 	color: #bcbcbc;
 }
 
-.footer__bottom-left-text a{
+.footer_-left-text a{
 	text-decoration: underline;
 }

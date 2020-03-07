@@ -79,6 +79,7 @@ html {
 }
 
 /* header styles */
+
 nav {
 	padding: 25px 0;
 }
@@ -94,8 +95,12 @@ nav {
 }
 
 header {
-	padding-bottom: 100px;
+	padding-bottom: 145px;
 	overflow: hidden;
+}
+
+.header_utp {
+	padding-top: 25px;
 }
 
 .logo_img:before {
@@ -114,12 +119,12 @@ header {
 	left: 125px;
 }
 
-.header_utp-download-container:before {
+.left-background:before {
 	content: url(img/background/left.png);
 	position: absolute;
 	z-index: -200;
-	top: -450px;
-	right: -900px;
+	top: -320px;
+	left: -530px;
 }
 
 /* main_info-right styles */

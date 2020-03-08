@@ -60,11 +60,37 @@
 		right: 50px;
 	}
 	
+	.main_thans-diary-bg {
+		top: -40px;
+		position: absolute;
+		left: -90px;
+	}
+	
 	.main_wish-diary-bg {
 		top: -100px;
 		width: 500px;
 		position: absolute;
 		right: -150px;
+	}
+	
+	.main_wish-diary-bg:after {
+		position: absolute;
+		display: inline-block;	
+		background: white;
+		background-size: 100px 100px;
+		width: 100px;
+		height: 100px;
+		content: "";
+	}
+	.main_wish-diary-bg:before {
+		top: -70px;
+		left: 0px;
+	}
+	
+	.main_action-fear-diary-bg {
+		top: -80px;
+		position: absolute;
+		left: -90px;
 	}
 	
 	.main_diary-of-emotions-bg {
@@ -74,19 +100,67 @@
 		right: -170px;
 	}
 	
-	.main_thans-diary-bg, .main_action-fear-diary-bg {
-		position: absolute;
-		left: -90px;
-	}
-	
-	.main_wish-diary-bg:before {
-		top: -70px;
-		left: 0px;
-	}
-	
 	.main_diary-of-emotions-bg:before {
 		top: -90px;
 		left: -30px;
+	}
+
+	.main_thans-diary-bg {
+		top: -40px;
+		position: absolute;
+		left: -190px;
+	}
+	
+	.main_thans-diary-bg:before {
+		left: -300px;
+	}
+	
+	.main_wish-diary-bg {
+		top: -100px;
+		width: 500px;
+		position: absolute;
+		right: -260px;
+	}
+	
+	.main_action-fear-diary-bg {
+		top: -80px;
+		position: absolute;
+		left: -180px;
+	}
+	
+	.main_diary-of-emotions-bg {
+		top: -100px;
+		width: 500px;
+		position: absolute;
+		right: -280px;
+	}
+}
+
+@media (max-width: 768px){
+	.main_thans-diary-bg {
+		top: -40px;
+		position: absolute;
+		left: -230px;
+	}
+	
+	.main_wish-diary-bg {
+		top: -100px;
+		width: 500px;
+		position: absolute;
+		right: -300px;
+	}
+	
+	.main_action-fear-diary-bg {
+		top: -80px;
+		position: absolute;
+		left: -220px;
+	}
+	
+	.main_diary-of-emotions-bg {
+		top: -100px;
+		width: 500px;
+		position: absolute;
+		right: -320px;
 	}
 }
 

@@ -1,5 +1,6 @@
 html {
 	font-family: "Gilroy"; 
+	overflow-x: hidden;
 }
 
 body {
@@ -7,7 +8,6 @@ body {
 }
 
 /* general styles */
-
 
 .section_flex-container {
 	display: flex;
@@ -44,9 +44,6 @@ body {
 }
 
 .btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	padding: 10px 30px;
 	font-size: 	1.2em;
   border-radius: 10px;
@@ -104,6 +101,9 @@ nav {
 .header_utp {
 	padding: 25px 50px 0;
 }
+.header_utp .section_text-container {
+	padding-top: 86px;
+}
 
 .logo_img:before {
 	content: url(img/background/for-logo.png);
@@ -141,9 +141,6 @@ nav {
 }
 
 /* main_***-bg styles */
-
-.main_thans-diary-bg {
-}
 
 .main_thans-diary-bg:before {
 	content: url(img/background/thanks-diary-bg.png);

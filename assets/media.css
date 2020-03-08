@@ -20,14 +20,48 @@
 	}
 }
 
-@media (max-width: 1100px) {	
-	.main_thans-diary-bg:before, .main_wish-diary-bg:before, .main_action-fear-diary-bg:before, .main_diary-of-emotions-bg:before {
-		transform: scale(0.8);
+@media (max-width: 1200px){
+	.main_action-fear-diary-bg:before {
+		left: -430px;
+		top: -80px;
+	}
+	
+	.main_diary-of-emotions-bg:before {
+		top: -70px;
+		left: -100px;
+	}
+	
+	.main_wish-diary-bg:before {
+		top: -110px;
+	}
+	
+	header nav .btn_download {
+		padding: 10px 14px;
+	}
+}
+
+@media (max-width: 1500px){
+	.right-background:before {
+		left: 80px;
+	}
+	
+	.right-background {
+		margin: 0 0 0 40px;
 	}
 }
 
 @media (min-width: 1500px){
 	.container {
 		max-width: 1400px;
+	}
+}
+
+@media (min-width: 1921px){
+	.main_thans-diary-bg:before {
+		left: -200px;
+	}
+	
+	.main_action-fear-diary-bg:before {
+		left: -300px;
 	}
 }

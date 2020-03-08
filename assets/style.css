@@ -8,6 +8,14 @@ body {
 }
 
 /* general styles */
+.animation_opacity {
+	opacity: 1!important;
+}
+
+.main_info {
+	opacity: 0;
+	transition: all 1.2s .5s ease-in-out;
+}
 
 .section_flex-container {
 	display: flex;

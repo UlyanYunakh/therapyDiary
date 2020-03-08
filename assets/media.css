@@ -50,6 +50,46 @@
 	}
 }
 
+@media (max-width: 991px){
+	.row {
+		position: relative;
+	}
+
+	.right-background {
+		position: absolute;
+		right: 50px;
+	}
+	
+	.main_wish-diary-bg {
+		top: -100px;
+		width: 500px;
+		position: absolute;
+		right: -150px;
+	}
+	
+	.main_diary-of-emotions-bg {
+		top: -100px;
+		width: 500px;
+		position: absolute;
+		right: -170px;
+	}
+	
+	.main_thans-diary-bg, .main_action-fear-diary-bg {
+		position: absolute;
+		left: -90px;
+	}
+	
+	.main_wish-diary-bg:before {
+		top: -70px;
+		left: 0px;
+	}
+	
+	.main_diary-of-emotions-bg:before {
+		top: -90px;
+		left: -30px;
+	}
+}
+
 @media (min-width: 1500px){
 	.container {
 		max-width: 1400px;

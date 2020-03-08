@@ -1,0 +1,27 @@
+@media (max-width: 1300px) {
+	.section_text-container h1 {
+		font-size: 2.5em;
+	}
+
+	.section_text-container h2 {
+		font-size: 1.5em
+	}
+
+	.section_text-container p {
+		font-size: 1.2em;
+	}
+	
+	.main_thans-diary-bg:before, .main_wish-diary-bg:before, .main_action-fear-diary-bg:before, .main_diary-of-emotions-bg:before {
+		transform: scale(0.9);
+	}
+	
+	.phone-img {
+		transform: scale(0.9);
+	}
+}
+
+@media (max-width: 1100px) {	
+	.main_thans-diary-bg:before, .main_wish-diary-bg:before, .main_action-fear-diary-bg:before, .main_diary-of-emotions-bg:before {
+		transform: scale(0.8);
+	}
+}

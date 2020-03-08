@@ -1,5 +1,8 @@
 html {
 	font-family: "Gilroy"; 
+}
+
+body {
 	overflow-x: hidden;
 }
 
@@ -15,9 +18,13 @@ html {
 	align-items: center;
 }
 
+.section_text-container {
+	padding: 0 0 48px;
+}
+
 .section_text-container h1 {
 	font-family: 'Cambria';
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 700;
   color: #313342;
 }
@@ -133,6 +140,9 @@ nav {
 
 /* main_***-bg styles */
 
+.main_thans-diary-bg {
+}
+
 .main_thans-diary-bg:before {
 	content: url(img/background/thanks-diary-bg.png);
 	position: absolute;
@@ -182,7 +192,7 @@ nav {
 }
 
 .download-section p {
-	font-size: 1.7em;
+	font-size: 2em;
 	font-family: "Gilroy";
 }
 

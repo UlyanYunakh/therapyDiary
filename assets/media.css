@@ -142,6 +142,16 @@
 		position: absolute;
 		left: -230px;
 	}
+	.main_thans-diary-bg:after {
+		position: absolute;
+		left: 180px;
+		z-index: 0;
+		background: rgba(255, 255, 255, 0.7);
+		background-size: 800px 800px;
+		width: 800px;
+		height: 800px;
+		content:"";
+	}
 	
 	.main_wish-diary-bg {
 		top: -100px;

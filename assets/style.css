@@ -13,6 +13,7 @@ body {
 }
 
 .main_info {
+	padding: 75px 48px 75px;
 	opacity: 0;
 	transition: all 1.2s .5s ease-in-out;
 }
@@ -82,10 +83,6 @@ body {
 	font-family: "Gilroy";
 }
 
-.main_info-left {
-	padding: 100px 0;
-}
-
 /* header styles */
 
 header nav .btn_download {
@@ -107,7 +104,7 @@ nav {
 }
 
 .header_utp {
-	padding: 25px 50px 0;
+	padding: 25px 50px 75px;
 }
 .header_utp .section_text-container {
 	padding-top: 86px;
@@ -140,12 +137,6 @@ nav {
 	z-index: -200;
 	top: -320px;
 	left: -530px;
-}
-
-/* main_info-right styles */
-
-.main_info {
-	padding: 150px 48px 0;
 }
 
 /* main_***-bg styles */
@@ -182,9 +173,8 @@ nav {
 	left: -120px;
 }
 
-
 .download-section {
-	padding: 200px 0 100px;
+	padding: 125px 0 100px;
 	text-align:center;
 }
 

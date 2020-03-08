@@ -25,9 +25,3 @@
 		transform: scale(0.8);
 	}
 }
-
-@media (min-width: 1500px){
-	.container {
-		max-width: 1400px;
-	}
-}

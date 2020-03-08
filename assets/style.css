@@ -140,6 +140,9 @@ nav {
 
 /* main_***-bg styles */
 
+.main_thans-diary-bg {
+}
+
 .main_thans-diary-bg:before {
 	content: url(img/background/thanks-diary-bg.png);
 	position: absolute;

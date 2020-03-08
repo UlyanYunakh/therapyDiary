@@ -119,7 +119,7 @@ nav {
 	position: absolute;
 	z-index: -100;
 	top: -230px;
-	left: 80px;
+	left: 125px;
 }
 
 .left-background:before {
@@ -198,13 +198,13 @@ nav {
 
 footer{
 	font-family: "Gilroy";
-	padding: 60px 48px;
+	padding: 60px 0;
 	background: #313342;
 	color: #bcbcbc;
 	font-size: 1em;
 }
 
-.footer_left-text b{
+.footer_-left-text b{
 	color: white;
 }
 
@@ -212,6 +212,6 @@ footer a{
 	color: #bcbcbc;
 }
 
-.footer_left-text a{
+.footer_-left-text a{
 	text-decoration: underline;
 }

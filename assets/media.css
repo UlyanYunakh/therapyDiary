@@ -142,18 +142,10 @@
 		position: absolute;
 		left: -230px;
 	}
-	.main_thans-diary-bg:after {
-		position: absolute;
-		left: 180px;
-		z-index: 0;
-		background: rgba(255, 255, 255, 0.7);
-		background-size: 800px 800px;
-		width: 800px;
-		height: 800px;
-		content:"";
-	}
+	
 	
 	.main_wish-diary-bg {
+		z-index: -1;
 		top: -100px;
 		width: 500px;
 		position: absolute;
@@ -167,10 +159,36 @@
 	}
 	
 	.main_diary-of-emotions-bg {
+		z-index: -1;
 		top: -100px;
 		width: 500px;
 		position: absolute;
 		right: -320px;
+	}
+}
+
+@media (max-width: 575px){
+	.main_thans-diary-bg:after, .main_action-fear-diary-bg:after {
+		position: absolute;
+		left: 170px;
+		z-index: 0;
+		background: rgba(255, 255, 255, 0.7);
+		background-size: 40% 100%;
+		width: 60%;
+		height: 100%;
+		content:"";
+	}
+	
+	.main_wish-diary-bg:after, .main_diary-of-emotions-bg:after {
+		position: absolute;
+		top: -50px;
+		left: 10px;
+		z-index: 0;
+		background: rgba(255, 255, 255, 0.7);
+		background-size: 60% 100%;
+		width: 60%;
+		height: 150%;
+		content:"";
 	}
 }
 

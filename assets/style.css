@@ -27,6 +27,7 @@ body {
 
 .section_text-container {
 	padding: 0 0 48px;
+	min-width: 280px;
 }
 
 .section_text-container h1 {

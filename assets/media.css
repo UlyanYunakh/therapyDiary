@@ -139,10 +139,41 @@
 @media (max-width: 768px){
 	.main_thans-diary-bg {
 		top: -40px;
+		width: 500px;
 		position: absolute;
 		left: -230px;
 	}
 	
+	.main_wish-diary-bg {
+		z-index: -1;
+		top: -100px;
+		width: 500px;
+		position: absolute;
+		right: -300px;
+	}
+	
+	.main_action-fear-diary-bg {
+		top: -80px;
+		width: 500px;
+		position: absolute;
+		left: -220px;
+	}
+	
+	.main_diary-of-emotions-bg {
+		z-index: -1;
+		top: -100px;
+		width: 500px;
+		position: absolute;
+		right: -320px;
+	}
+}
+
+@media (max-width: 575px){
+	.main_thans-diary-bg {
+		top: -40px;
+		position: absolute;
+		left: -230px;
+	}
 	
 	.main_wish-diary-bg {
 		z-index: -1;
@@ -165,14 +196,12 @@
 		position: absolute;
 		right: -320px;
 	}
-}
-
-@media (max-width: 575px){
+	
 	.main_thans-diary-bg:after, .main_action-fear-diary-bg:after {
 		position: absolute;
 		left: 170px;
 		z-index: 0;
-		background: rgba(255, 255, 255, 0.7);
+		background: rgba(255, 255, 255, 0.8);
 		background-size: 40% 100%;
 		width: 60%;
 		height: 100%;
@@ -184,7 +213,7 @@
 		top: -50px;
 		left: 10px;
 		z-index: 0;
-		background: rgba(255, 255, 255, 0.7);
+		background: rgba(255, 255, 255, 0.8);
 		background-size: 60% 100%;
 		width: 60%;
 		height: 150%;

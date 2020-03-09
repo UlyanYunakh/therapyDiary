@@ -25,9 +25,11 @@ var isScrolling = false;
         if (isPartiallyVisible(animateSection)) {
           animateSection.classList.add("animation_opacity");
           console.log(animateSection);
-        } 
+        } else {
+
+        }
       }
-    }
+     }
  
     function isPartiallyVisible(el) {
       var elementBoundary = el.getBoundingClientRect();

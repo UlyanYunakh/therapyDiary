@@ -55,12 +55,16 @@
 }
 
 @media (max-width: 991px){
+	.btn_utp {
+		padding: 16px 18px;
+	}
+
 	.header_utp {
 		padding-bottom: 100px;
 	}
 	
 	.main_info {
-		padding: 100px 48px 100px;
+		padding: 60px 32px;
 	}
 	
 	.left-background:before {
@@ -264,12 +268,16 @@
 	.section_text-container {
 		max-width: 320px;
 	}
+
+	.section_text-container p {
+		margin: 15px 0;
+	}
 	
 	.map_wrapper {
 		display: block;
 		position: absolute;
 		top: 0px;
-		right: -3000px;
+		right: -600px;
 		z-index: 1000;
 		width: 100%;
 		transition: right 0.5s ease-in-out;
@@ -294,11 +302,11 @@
 	}
 
 	.main_info {
-		padding: 100px 0 100px;
+		padding: 50px 0;
 	}
 	
 	.download-section {
-		padding: 60px 0 50px;
+		padding: 50px 0;
 	}
 	
 	.right-background:before {
@@ -312,6 +320,10 @@
 }
 
 @media (max-width: 575px){
+	header {
+		padding-bottom: 40px;
+	}
+
 	.main_thans-diary-bg, .main_action-fear-diary-bg {
 		z-index: -2;
 		top: -20px;
@@ -350,8 +362,13 @@
 		left: 350px;
 		top: -400px;
 	}
+
+	.main_thans-diary-bg img, .main_wish-diary-bg img, .main_action-fear-diary-bg img, .main_diary-of-emotions-bg img {
+		display: none;
+	}
 	
-	.main_thans-diary-bg:after, .main_action-fear-diary-bg:after {
+	
+	/*.main_thans-diary-bg:after, .main_action-fear-diary-bg:after {
 		position: absolute;
 		left: 17px;
 		top:-27px;
@@ -361,7 +378,7 @@
 		width: 48%;
 		height: 117%;
 		content:"";
-	}
+	}*/
 	
 	.main_wish-diary-bg:after, .main_diary-of-emotions-bg:after {
 		position: absolute;

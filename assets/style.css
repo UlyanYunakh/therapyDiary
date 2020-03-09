@@ -4,7 +4,6 @@ html {
 }
 
 body {
-	position: relative;
 	overflow-x: hidden;
 }
 
@@ -27,7 +26,6 @@ body {
 
 .section_text-container {
 	padding: 0 0 48px;
-	min-width: 280px;
 }
 
 .section_text-container h1 {
@@ -178,6 +176,11 @@ nav {
 .download-section {
 	padding: 125px 0 100px;
 	text-align:center;
+}
+
+.download-section h2 {
+	font-family: 'Cambria';
+	font-weight: 600;
 }
 
 .download-section h2 {

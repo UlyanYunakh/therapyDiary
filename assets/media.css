@@ -221,6 +221,24 @@
 	}
 }
 
+@media (max-width: 400px){
+	.section_text-container h1 {
+		font-size: 2em;
+	}
+
+	.section_text-container h2 {
+		font-size: 1.5em
+	}
+
+	.section_text-container p {
+		font-size: 1em;
+	}
+	
+	.btn_utp {
+		font-size: 1.2em;
+	}
+}
+
 @media (min-width: 1500px){
 	.container {
 		max-width: 1400px;

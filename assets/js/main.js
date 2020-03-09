@@ -49,3 +49,27 @@ var isScrolling = false;
  
       return ((top >= 0) && (bottom <= window.innerHeight));
     }
+
+let menuState = false;
+
+$('.menu_btn').click(function () {
+  menuState = !menuState;
+  if (menuState) {
+    $('.map_wrapper').css({'right': '0'})
+  }
+})
+
+$('.map_close').click(function () {
+  menuState = !menuState;
+  if (!menuState) {
+    $('.map_wrapper').css({'right': '-3000px'})
+  }
+})
+
+
+$('.map_item').click(function () {
+  menuState = !menuState;
+  if (!menuState) {
+    $('.map_wrapper').css({'right': '-3000px'})
+  }
+})

@@ -116,7 +116,7 @@ nav {
 	content: url(img/background/for-logo.png);
 	position: absolute;
 	transition: all 0.5s 0.1s ease-in-out;
-	z-index: -100;
+	z-index: -4;
 	top: -90px;
 	left: -180px;
 }
@@ -128,7 +128,7 @@ nav {
 .right-background:before {
 	content: url(img/background/right.png);
 	position: absolute;
-	z-index: -100;
+	z-index: -4;
 	top: -230px;
 	left: 120px;
 }
@@ -136,7 +136,7 @@ nav {
 .left-background:before {
 	content: url(img/background/left.png);
 	position: absolute;
-	z-index: -200;
+	z-index: -5;
 	top: -320px;
 	left: -530px;
 }
@@ -210,4 +210,26 @@ footer a{
 
 .footer_left-text a{
 	text-decoration: underline;
+}
+
+
+.menu_btn, .menu_btn img {
+	display: none;
+}
+
+.map_wrapper {
+	display: none;
+}
+.map_wrapper a {
+	color: #a9a7b8!important;
+}
+.map_close {
+    width: 20px;
+    height: 20px;
+	background: white;
+	position: absolute;
+	right: 40px;
+}
+.map_container {
+    padding-top: 30px;
 }

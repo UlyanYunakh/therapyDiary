@@ -56,7 +56,8 @@ $('.menu_btn').click(function () {
   menuState = !menuState;
   if (menuState) {
     console.log('work');
-    $('.map_wrapper').css({'right': '20px'})
+    $('.map_wrapper').css({'opacity': '1'})
+	$('.map_wrapper').css({'z-index': '20'})
     $('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
   }
 })
@@ -64,7 +65,9 @@ $('.menu_btn').click(function () {
 $('.map_close').click(function () {
   menuState = !menuState;
   if (!menuState) {
-    $('.map_wrapper').css({'right': '-3000px'})
+    $('.map_wrapper').css({'opacity': '0'})
+	$('.map_wrapper').css({'z-index': '0'})
+	$('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
   }
 })
 
@@ -72,6 +75,8 @@ $('.map_close').click(function () {
 $('.map_item').click(function () {
   menuState = !menuState;
   if (!menuState) {
-    $('.map_wrapper').css({'right': '-3000px'})
+    $('.map_wrapper').css({'opacity': '0'})
+	$('.map_wrapper').css({'z-index': '0'})
+	$('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
   }
 })

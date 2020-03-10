@@ -218,7 +218,7 @@
 	
 	.map {
 		position: relative;
-		left: 40px;
+		right: -15px;
 	}
 
 	.btn_utp {
@@ -527,7 +527,7 @@
 	}
 	
 	.footer_section-2 img {
-		width: 130px;
+		width: 125px;
 		height: 40px;
 	}
 	

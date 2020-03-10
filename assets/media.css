@@ -400,11 +400,11 @@
 
 @media (max-width: 575px){
 	.map {
-		left: 5px;
+		left: -9px;
 	}
 	
 	.map_close {
-		right: 25px;
+		right: 11px;
 	}
 	
 	header {

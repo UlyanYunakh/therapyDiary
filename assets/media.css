@@ -277,7 +277,7 @@
 		display: block;
 		position: absolute;
 		top: 0px;
-		right: -600px;
+		right: -00px;
 		z-index: 1000;
 		width: 100%;
 		transition: right 0.5s ease-in-out;

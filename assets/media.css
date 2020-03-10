@@ -240,6 +240,7 @@
 	}
 	
 	.menu_btn {
+		z-index: 10;
 		display: block;
 		width: 26px;
 		height: 26px;
@@ -258,13 +259,13 @@
 	}
 	
 	.menu_btn > span::before {
-	  content: '';
-	  top: -8px;
+		content: '';
+		top: -8px;
 	}
 
 	.menu_btn > span::after {
-	  content: '';
-	  top: 8px;
+		content: '';
+		top: 8px;
 	}
 	
 	.header_utp .section_text-container {
@@ -338,8 +339,6 @@
 		display: block;
 		position: absolute;
 		top: 0px;
-		right: -600px;
-		z-index: 1000;
 		width: 100%;
 		transition: right 0.5s ease-in-out;
 		margin-right: 0px;
@@ -405,7 +404,7 @@
 	}
 	
 	.map_close {
-		right: 5px;
+		right: 25px;
 	}
 	
 	header {

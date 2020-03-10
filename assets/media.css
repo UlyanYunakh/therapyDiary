@@ -204,6 +204,15 @@
 		width: 100px;
 	}
 	
+	.map {
+		position: relative;
+		left: 40px;
+	}
+
+	.btn_utp {
+		padding: 10px 10px;
+	}
+	
 	.logo_img:before {
 		top: -110px;	
 		left: -200px;
@@ -218,12 +227,13 @@
 		height: 40px;
 	}
 	
-	.menu_btn, .menu_btn img {
+	.menu_btn {
 		display: block;
-		width: 20px;
+		width: 26px;
+		height: 26px;
 		position: absolute;
-		right: 10px;
-		top: 18px;
+		right: 0px;
+		top: 32px;
 	}
 	
 	.header_utp .section_text-container {
@@ -359,6 +369,14 @@
 }
 
 @media (max-width: 575px){
+	.map {
+		left: 5px;
+	}
+	
+	.map_close {
+		right: 5px;
+	}
+	
 	header {
 		padding-bottom: 40px;
 	}

@@ -220,7 +220,7 @@ footer a{
 	display: none;
 }
 
-.map_wrapper a {
+.map_wrapper .header_nav-link {
 	color: #a9a7b8!important;
 }
 
@@ -231,15 +231,6 @@ footer a{
 	position: absolute;
 	top: 10px;
 	right: 40px;
-}
-
-.menu_btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu_btn > span::after {
-  content: '';
-  top: 8px;
 }
 
 .map_container {

@@ -18,6 +18,10 @@
 	.phone-img {
 		transform: scale(0.9);
 	}
+	
+	.main_info {
+		padding: 50px 48px 50px;
+	}
 }
 
 @media (max-width: 1500px){
@@ -32,6 +36,14 @@
 
 
 @media (max-width: 1200px){
+	.header_utp {
+		padding: 25px 50px 60px;
+	}
+	
+	.main_info {
+		padding: 40px 48px 40px;
+	}
+	
 	.right-background:before {
 		left: 60px;
 	}
@@ -219,7 +231,7 @@
 		transform: scale(0.7);
 	}
 	.header_utp {
-		padding: 10px 10px;
+		padding: 10px 10px 30px;
 	}
 	
 	.header_utp-download-container img {
@@ -235,6 +247,7 @@
 		right: 0px;
 		top: 32px;
 	}
+	
 	.menu_btn > span, .menu_btn > span::before, .menu_btn > span::after {
 		display: block;
 		position: absolute;
@@ -242,6 +255,16 @@
 		height: 2px;
 		z-index: 2;
 		background-color: black;
+	}
+	
+	.menu_btn > span::before {
+	  content: '';
+	  top: -8px;
+	}
+
+	.menu_btn > span::after {
+	  content: '';
+	  top: 8px;
 	}
 	
 	.header_utp .section_text-container {

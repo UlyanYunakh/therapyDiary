@@ -18,6 +18,10 @@
 	.phone-img {
 		transform: scale(0.9);
 	}
+	
+	.main_info {
+		padding: 50px 48px 50px;
+	}
 }
 
 @media (max-width: 1500px){
@@ -32,6 +36,14 @@
 
 
 @media (max-width: 1200px){
+	.header_utp {
+		padding: 25px 50px 60px;
+	}
+	
+	.main_info {
+		padding: 40px 48px 40px;
+	}
+	
 	.right-background:before {
 		left: 60px;
 	}
@@ -176,6 +188,26 @@
 	.header_utp .section_text-container {
 		padding-top: 40px;
 	}
+	
+	.footer_section-1 { 
+		order: 3;
+		max-width: 300px;
+	}
+	
+	.footer_section-2 {
+		order: 3;
+		max-width: 200px;
+	}
+	
+	.footer_section-3 {
+		order: 1;
+		max-width: 350px;
+	}
+	
+	.footer_section-4 {
+		order: 2;
+		left: -15px;
+	}
 }
 
 
@@ -184,13 +216,22 @@
 		width: 100px;
 	}
 	
+	.map {
+		position: relative;
+		left: 40px;
+	}
+
+	.btn_utp {
+		padding: 10px 10px;
+	}
+	
 	.logo_img:before {
 		top: -110px;	
 		left: -200px;
 		transform: scale(0.7);
 	}
 	.header_utp {
-		padding: 10px 10px;
+		padding: 10px 10px 30px;
 	}
 	
 	.header_utp-download-container img {
@@ -198,12 +239,33 @@
 		height: 40px;
 	}
 	
-	.menu_btn, .menu_btn img {
+	.menu_btn {
+		z-index: 10;
 		display: block;
-		width: 20px;
+		width: 26px;
+		height: 26px;
 		position: absolute;
-		right: 10px;
-		top: 21px;
+		right: 0px;
+		top: 32px;
+	}
+	
+	.menu_btn > span, .menu_btn > span::before, .menu_btn > span::after {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		z-index: 2;
+		background-color: black;
+	}
+	
+	.menu_btn > span::before {
+		content: '';
+		top: -8px;
+	}
+
+	.menu_btn > span::after {
+		content: '';
+		top: 8px;
 	}
 	
 	.header_utp .section_text-container {
@@ -277,8 +339,6 @@
 		display: block;
 		position: absolute;
 		top: 0px;
-		right: -3000px;
-		z-index: 1000;
 		width: 100%;
 		transition: right 0.5s ease-in-out;
 		margin-right: 0px;
@@ -317,9 +377,36 @@
 		left: -70px;
 		top: -290px;
 	}
+	
+	.footer_section-1 { 
+		order: 3;
+		max-width: 300px;
+	}
+	
+	.footer_section-2 {
+		order: 3;
+		max-width: 200px;
+	}
+	
+	.footer_section-3 {
+		order: 1;
+		max-width: 240px;
+	}
+	
+	.footer_section-4 {
+		order: 2;
+	}
 }
 
 @media (max-width: 575px){
+	.map {
+		left: -9px;
+	}
+	
+	.map_close {
+		right: 11px;
+	}
+	
 	header {
 		padding-bottom: 40px;
 	}
@@ -395,10 +482,96 @@
 	.btn_utp {
 		width: 100%;
 	}
+	
+	.footer_section-1 { 
+		order: 3;
+		max-width: 250px;
+	}
+	
+	.footer_section-2 {
+		order: 3;
+	}
+	
+	.footer_section-3 {
+		order: 1;
+		max-width: 220px;
+	}
+	
+	.footer_section-4 {
+		order: 2;
+	}
 }
 
-@media (max-width: 991px){
+@media (max-width: 450px){
+	footer {
+		padding-top: 40px;
+	}
 	
+	footer .row {
+		margin:auto;
+	}
+	
+	.footer_section-1 { 
+		order: 4;
+		margin:auto;
+		max-width: 100%;
+	}
+	
+	.footer_section-2 {
+		order: 3;
+		margin: auto;
+		max-width: 100%;
+		display: flex;
+		justify-content: space-around;
+		padding-bottom: 20px;
+	}
+	
+	.footer_section-2 img {
+		width: 130px;
+		height: 40px;
+	}
+	
+	.footer_section-3 {
+		order: 1;
+		margin:auto;
+		max-width: 100%;
+		justify-content: space-around!important;
+		padding-bottom: 20px;
+	}
+	
+	.footer_section-4 {
+		margin:auto;
+		order: 2;
+		top: 0;
+		left: 0;
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 991px){
+	.main_thans-diary-bg {
+		z-index: -2;
+		top: -20px;
+		left: -14px;
+	} 
+
+	.main_action-fear-diary-bg {
+		z-index: -2;
+		top: -20px;
+		left: -2px;
+	}
+	
+	.main_wish-diary-bg {
+		z-index: -2;
+		top: -40px;
+		right: -48px;
+	}
+	
+	.main_diary-of-emotions-bg {
+		z-index: -2;
+		top: -47px;
+		right: -95px;
+	}
 }
 
 @media (min-width: 1500px){

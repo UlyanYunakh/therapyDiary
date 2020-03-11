@@ -106,6 +106,7 @@ $(window).on('load', function () {
 		'items_per_row': 3, //Количество изображений в ряд
 		'margin': 2 //Отступ между изображениями
 	});
+});
 
 var $btn = document.querySelector('.btn');
 

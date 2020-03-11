@@ -1,3 +1,13 @@
+@media (max-width: 1500px){
+	.right-background:before {
+		left: 80px;
+	}
+	
+	.right-background {
+		margin: 0 0 0 40px;
+	}
+}
+
 @media (max-width: 1300px) {
 	.section_text-container h1 {
 		font-size: 2.5em;
@@ -23,17 +33,6 @@
 		padding: 50px 48px 50px;
 	}
 }
-
-@media (max-width: 1500px){
-	.right-background:before {
-		left: 80px;
-	}
-	
-	.right-background {
-		margin: 0 0 0 40px;
-	}
-}
-
 
 @media (max-width: 1200px){
 	.header_utp {
@@ -69,6 +68,7 @@
 @media (max-width: 991px){
 	.btn_utp {
 		padding: 16px 18px;
+		font-size: 1em;
 	}
 
 	.header_utp {
@@ -146,16 +146,14 @@
 	}
 
 	.section_text-container h2 {
-		font-size: 1.2em
+		font-size: 1.2em;
+		margin: 15px 0 20px;
 	}
 
 	.section_text-container p {
 		font-size: 1em;
 	}
 	
-	.btn_utp {
-		font-size: 1em;
-	}
 	
 	.download-section h2 {
 		font-size: 1.5em;
@@ -216,20 +214,17 @@
 		width: 100px;
 	}
 	
-	.map {
-		position: relative;
-		right: -15px;
+	.logo_img:before {
+		top: -110px;	
+		left: -200px;
+		transform: scale(0.7);
 	}
 
 	.btn_utp {
 		padding: 10px 10px;
 	}
 	
-	.logo_img:before {
-		top: -110px;	
-		left: -200px;
-		transform: scale(0.7);
-	}
+	
 	.header_utp {
 		padding: 10px 10px 30px;
 	}
@@ -240,18 +235,19 @@
 	}
 	
 	.menu_btn {
-		z-index: 10;
+		z-index: 1;
 		display: block;
 		width: 26px;
 		height: 26px;
 		position: absolute;
-		right: 0px;
+		right: 15px;
 		top: 32px;
 	}
 	
 	.menu_btn > span, .menu_btn > span::before, .menu_btn > span::after {
 		display: block;
 		position: absolute;
+		left: 0;
 		width: 100%;
 		height: 2px;
 		z-index: 2;
@@ -349,6 +345,8 @@
 	}
 
 	.map {
+		position: relative;
+		right: -15px;
 		padding-top: 20px;
 	}
 	
@@ -399,12 +397,20 @@
 }
 
 @media (max-width: 575px){
+	.left-background:before {
+		top: -620px;
+	}
+	
+	.section_text-container h2 {
+		margin: 15px 0;
+	}
+	
 	.map {
 		left: -9px;
 	}
 	
 	.map_close {
-		right: 11px;
+		right: 6px;
 	}
 	
 	header {
@@ -434,7 +440,7 @@
 	}
 	
 	.header_utp .section_text-container {
-		padding-top: 20px;
+		padding: 0 0 20px;
 	}
 	
 	.right-background img{
@@ -453,19 +459,6 @@
 	.main_thans-diary-bg img, .main_wish-diary-bg img, .main_action-fear-diary-bg img, .main_diary-of-emotions-bg img {
 		display: none;
 	}
-	
-	
-	/*.main_thans-diary-bg:after, .main_action-fear-diary-bg:after {
-		position: absolute;
-		left: 17px;
-		top:-27px;
-		z-index: 0;
-		background: rgba(255, 255, 255, 0.8);
-		background-size: 60% 100%;
-		width: 48%;
-		height: 117%;
-		content:"";
-	}*/
 	
 	.main_wish-diary-bg:after, .main_diary-of-emotions-bg:after {
 		position: absolute;

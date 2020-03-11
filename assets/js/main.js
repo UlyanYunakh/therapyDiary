@@ -59,6 +59,11 @@ $('.menu_btn').click(function () {
     $('.map_wrapper').css({'opacity': '1'})
 	$('.map_wrapper').css({'z-index': '20'})
     $('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
+	$('.menu_btn > span').css({'transform': 'rotate(90deg)'})
+	$('.menu_btn > span').css({'opacity': '0'})
+	$('.menu_btn > span').css({'transition': 'all 1s ease-in-out'})
+	$('.map_close > span').css({'transform': 'rotate(135deg)'})
+	$('.map_close > span').css({'transition': 'all 1s ease-in-out'})
   }
 })
 
@@ -68,9 +73,13 @@ $('.map_close').click(function () {
     $('.map_wrapper').css({'opacity': '0'})
 	$('.map_wrapper').css({'z-index': '0'})
 	$('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
+	$('.menu_btn > span').css({'transform': 'rotate(0deg)'})
+	$('.menu_btn > span').css({'opacity': '1'})
+	$('.menu_btn > span').css({'transition': 'all 1s ease-in-out'})
+	$('.map_close > span').css({'transform': 'rotate(45deg)'})
+	$('.map_close > span').css({'transition': 'all 1s ease-in-out'})
   }
 })
-
 
 $('.map_item').click(function () {
   menuState = !menuState;
@@ -78,5 +87,23 @@ $('.map_item').click(function () {
     $('.map_wrapper').css({'opacity': '0'})
 	$('.map_wrapper').css({'z-index': '0'})
 	$('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
+	$('.menu_btn > span').css({'transform': 'rotate(0deg)'})
+	$('.menu_btn > span').css({'opacity': '1'})
+	$('.menu_btn > span').css({'transition': 'all 1s ease-in-out'})
+	$('.map_close > span').css({'transform': 'rotate(45deg)'})
+	$('.map_close > span').css({'transition': 'all 1s ease-in-out'})
   }
 })
+
+$(window).on('load', function () {
+	$.instagramFeed({
+		'username': 'therapy.diaries', //Имя пользователя
+		'container': "#instafeed", //Контейнер для изображений
+		'display_profile': false, //Отображение профиля
+		'display_biography': false, //Отображение биографии
+		'display_gallery': true, //Отображение галереи
+		'items': 9, //Количество изображений в галереи
+		'items_per_row': 3, //Количество изображений в ряд
+		'margin': 2 //Отступ между изображениями
+	});
+});

@@ -456,20 +456,45 @@
 		top: -400px;
 	}
 
-	.main_thans-diary-bg img, .main_wish-diary-bg img, .main_action-fear-diary-bg img, .main_diary-of-emotions-bg img {
-		display: none;
+	.main_thans-diary-bg img, .main_action-fear-diary-bg img {
+		width: 220px;
+		position: absolute;
+		top: 0;
+		opacity: 0.6;
+		right: -134px;
+		transform: rotate(-25deg);
 	}
 	
-	.main_wish-diary-bg:after, .main_diary-of-emotions-bg:after {
+	.main_wish-diary-bg, .main_diary-of-emotions-bg {
+		width: 100%;
+		left: unset;
+		right: unset;
+	}
+	
+	.main_wish-diary-bg:before {
+		right: -323px;
+		left: unset;
+		top: -219px;
+	}
+	
+	.main_diary-of-emotions-bg:before {
+		right: -362px;
+		left: unset;
+		top: -186px;
+	}
+	
+	.main_action-fear-diary-bg:before {
+		left: -467px;
+		top: -200px;
+	}
+	
+	.main_wish-diary-bg img, .main_diary-of-emotions-bg img {
+		width: 220px;
 		position: absolute;
-		top: -34px;
-		left: 10px;
-		z-index: 0;
-		background: rgba(255, 255, 255, 0.8);
-		background-size: 60% 100%;
-		width: 60%;
-		height: 125%;
-		content:"";
+		top: 0;
+		opacity: 0.6;
+		left: -103px;
+		transform: rotate(25deg);
 	}
 	
 	.btn_utp {

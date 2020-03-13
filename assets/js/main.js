@@ -107,3 +107,70 @@ $(window).on('load', function () {
 		'margin': 2 //Отступ между изображениями
 	});
 });
+
+var contentfulClient = contentful.createClient({
+  accessToken: 'zXkifYePwrdbkSDXe53-LgJl4nYg1DEiYmlkBkU0_ww',
+  space: 'o43op289a74x'
+})
+
+var PRODUCT_CONTENT_TYPE_ID = 'blogPost'
+
+var container = document.getElementById('content')
+
+contentfulClient.getEntries({
+    content_type: PRODUCT_CONTENT_TYPE_ID
+  })
+  .then(function(entries) {
+    container.innerHTML = renderProducts(entries.items)
+  })
+
+function renderProducts(products) {
+  return '<h1>Posts</h1>' +
+    '<div class="products">' +
+    products.map(renderSingleProduct).join('\n') +
+    '</div>'
+}
+
+function renderSingleProduct(product) {
+  var field = product.fields
+  console.log(field)
+  return '<div class="product-in-list">' +
+    '<div class="product-image">' +
+    renderImage(field.heroImage, field.slug) +
+    '</div>' +
+    '<div class="product-details">' +
+    renderProductDetails(field) +
+    '</div>' +
+    '</div>'
+}
+
+function renderProductDetails(field) {
+  return renderProductHeader(field) +
+    '<p class="product-categories">' + field.title +
+    '</p>' +
+    '<p>' + marked(field.description) + '</p>' +
+    '<p class="product-tags"><span>Tags:</span> ' + field.body + '</p>'
+}
+
+function renderProductHeader(field) {
+  return '<div class="product-header">' +
+    '<h2>' +
+    '<a href="product/' + field.slug + '">' +
+    field.title +
+    '</a>' +
+    '</h2>' +
+    ' by ' +
+    '<a href="brand/' + field.slug + '">' + field.publishDate + '</a>' +
+    '</div>'
+}
+
+function renderImage(image, slug) {
+  if (image && image.fields.file) {
+    return '<a href="product/' + slug + '">' +
+      '<img src="' + image.fields.file.url + '" width="150" height="150" />' +
+      '</a>'
+  } else {
+    return ''
+  }
+}
+

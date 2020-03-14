@@ -21,6 +21,10 @@ footer a::selection, footer p::selection, footer b::selection {
 	color: white;
 }
 
+.main_info img:nth-child(2) {
+	display: none;
+}
+
 .header_nav-link:hover {
 	background-color: white;
 	text-decoration: none;
@@ -334,4 +338,8 @@ footer a{
 	position: relative;
 	top: -35px;
 	padding: 0;
+}
+
+.footer_section-1 p, .footer_section-1 a {
+	text-align: left;
 }

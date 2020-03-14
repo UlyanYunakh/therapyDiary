@@ -1,3 +1,12 @@
+
+
+$('a[href^="#"]').click(function (event) {
+	event.preventDefault();
+	var id  = $(this).attr('href'),
+		top = $(id).offset().top - 10;
+	$('body,html').animate({scrollTop: top}, 500);
+});
+
 var isScrolling = false;
  
     window.addEventListener("scroll", throttleScroll, false);

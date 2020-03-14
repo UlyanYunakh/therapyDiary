@@ -10,6 +10,29 @@ body {
 
 /* general styles */
 
+h1::selection, h2::selection, br::selection, p::selection, i::selection, a::selection {
+	background: #807d97;
+	color: white;
+	border-bottom-style: none;
+}
+
+footer a::selection, footer p::selection, footer b::selection {
+	background: white;
+	color: white;
+}
+
+.header_nav-link:hover {
+	background-color: white;
+	text-decoration: none;
+	color: #313342;
+	border-radius: 10px;
+}
+
+footer a:hover {
+	color: white;
+	text-decoration: none;
+}
+
 .animation_opacity {
 	opacity: 1!important;
 }
@@ -97,7 +120,8 @@ nav {
 }
 
 .header_nav-link {
-	padding: 10px 20px;
+	padding: 7px 20px;
+	margin: 3px 4px;
 	font-size: 1.2em;
 	font-family: "Gilroy";
 	font-weight: 600;

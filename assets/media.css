@@ -224,6 +224,9 @@
 		padding: 10px 10px;
 	}
 	
+	.header_nav-link {
+		margin: 4px;
+	}
 	
 	.header_utp {
 		padding: 10px 10px 30px;

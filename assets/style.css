@@ -105,8 +105,9 @@ footer a:hover {
 }
 
 .btn_download:focus, .btn_download:hover, .btn_download:active {
-	border: 1px solid #fff;
-	background-color: transparent;
+	border: 1px solid #fff!important;
+	background-color: transparent!important;
+	box-shadow: none!important;
 }
 
 .btn_utp {

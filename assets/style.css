@@ -93,6 +93,10 @@ footer a:hover {
 	line-height: 1.33;
 }
 
+.btn:focus {
+	box-shadow: none;
+}
+
 .btn_download {
 	background-color: #fff;
 	font-family: "Gilroy";

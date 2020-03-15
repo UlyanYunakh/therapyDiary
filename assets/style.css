@@ -85,37 +85,51 @@ footer a:hover {
 .btn {
 	padding: 10px 30px;
 	font-size: 	1.2em;
-  border-radius: 10px;
-  border: none;
-  color: #313342;
-  font-weight: 600;
-  letter-spacing: 1.1px;
-  line-height: 1.33;
+	border-radius: 10px;
+	border: none;
+	color: #313342;
+	font-weight: 600;
+	letter-spacing: 1.1px;
+	line-height: 1.33;
 }
 
 .btn_download {
 	background-color: #fff;
 	font-family: "Gilroy";
+	border: 1px solid #fff;
+	transition: all 0.7s 0.1s ease-in-out;
 }
 
 .btn_download:focus, .btn_download:hover, .btn_download:active {
 	border: 1px solid #fff;
 	background-color: transparent;
-	color: #fff;
 }
 
 .btn_utp {
 	color: #fff;
-	background: linear-gradient(to right, #313342 0%, #152a57 20%, #333d6e 30%, #5d1b15 100%);
-	background-size: 500%;
+	background: linear-gradient(to right, #313342 0%, #D38312 10%, #A83279 20%, #152a57 30%, #333d6e 40%, #5d1b15 50%, #972c24 60%, #b9362d 70%, #5d1b15 80%, #665065 90%, #856f7e 95%, #333242 100%);
+	background-size: 1500%;
 	padding: 22px 30px;
 	max-width: 530px;
 	font-size: 1.4em;
 	font-family: "Gilroy";
+	animation-name: gradient_out;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
-.main_diary-of-emotions {
-	background: linear-gradient(to right, #313342 0%, #665065 20%, #856f7e 30%, #333242 100%);
+.download-section .btn_utp {
+	animation-duration: 5s;
+}
+
+.main_thans-diary {
+	background: linear-gradient(to right, #313342 0%, #D38312 50%, #A83279 100%);
+	background-size: 500%;
+}
+
+.main_wish-diary {
+	background: linear-gradient(to right, #313342 0%, #152a57 20%, #333d6e 30%, #5d1b15 100%);
 	background-size: 500%;
 }
 
@@ -124,22 +138,48 @@ footer a:hover {
 	background-size: 500%;
 }
 
-.main_thans-diary {
-	background: linear-gradient(to right, #313342 0%, #D38312 50%, #A83279 100%);
+.main_diary-of-emotions {
+	background: linear-gradient(to right, #313342 0%, #665065 20%, #856f7e 30%, #333242 100%);
 	background-size: 500%;
 }
 
 .btn_utp:hover {
-  animation-name: gradient;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
- }
+	animation-name: gradient;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.download-section .btn_utp:hover {
+	animation-name: gradient_download;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
     
 @keyframes gradient {
-	
 	0% {
 		background-position: 0% 20%;
+	}
+	
+	to {
+		background-position: 100%;
+	}
+}
+
+@keyframes gradient_out {
+	0% {
+		background-position: 100%;
+	}
+	
+	to {
+		background-position: 0% 20%;
+	}
+}
+
+@keyframes gradient_download {
+	0% {
+		background-position: 0% 10%;
 	}
 	
 	to {

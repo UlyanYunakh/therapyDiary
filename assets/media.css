@@ -86,12 +86,14 @@
 	}
 	
 	.stat-section h1 {
-		margin: 0 100px;
+		margin: auto;
 		padding-bottom: 0;
+		max-width: 220px;
 	}
 	
 	.stat-bg h1 {
-		margin: 0;
+		margin: auto;
+		max-width: 100%;
 	}
 	
 	.download-section {
@@ -441,10 +443,6 @@
 @media (max-width: 575px){
 	.map_container {
 		left: 0;
-	}
-	
-	.stat-section h1 {
-		margin: 0;
 	}
 	
 	.download-section {

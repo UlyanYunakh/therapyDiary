@@ -344,15 +344,17 @@ nav {
 }
 
 .stat-section h1 {
-	margin: 0 30px;
+	margin: auto;
 	padding-bottom: 10px;
 	font-size: 48px;
 	font-weight: 600;
 	border-bottom: 1px solid white;
+	max-width: 290px;
 }
 
 .stat-bg h1 {
 	border-bottom: none;
+	max-width: 100%;
 }
 
 .stat-bg p {

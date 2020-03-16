@@ -5,10 +5,24 @@ $('a[href^="#"]').click(function (event) {
 	$('body,html').animate({scrollTop: top}, 500);
 });
 
+$(window).scroll(function(e){
+    var scrolled = $(window).scrollTop();
+	if ( scrolled <= 540){
+		$('.main_thans-diary-bg img:nth-child(2)').css('top', -150-(scrolled * 0.2) + 'px');
+	}
+	if ( scrolled > 555 && scrolled <= 1250){
+		$('.main_wish-diary-bg img:nth-child(2)').css('top', -100-(scrolled * 0.2) + 'px');
+	}
+	if ( scrolled > 1300 && scrolled <= 2070){
+		$('.main_action-fear-diary-bg img:nth-child(2)').css('top', 100-(scrolled * 0.2) + 'px');
+	}
+	if ( scrolled > 2070){
+		$('.main_diary-of-emotions-bg img:nth-child(2)').css('top', 200-(scrolled * 0.2) + 'px');
+	}
+});
+
 var isScrolling = false;
- 
     window.addEventListener("scroll", throttleScroll, false);
- 
     function throttleScroll(e) {
       if (isScrolling == false) {
         window.requestAnimationFrame(function() {
@@ -18,45 +32,31 @@ var isScrolling = false;
       }
       isScrolling = true;
     }
- 
     document.addEventListener("DOMContentLoaded", scrolling, false);
-
     let animateSections = document.querySelectorAll('.main_info');
- 	console.log(animateSections);
- 
     function scrolling(e) {
- 
       for (var i = 0; i < animateSections.length; i++) {
         var animateSection = animateSections[i];
- 
         if (isPartiallyVisible(animateSection)) {
           animateSection.classList.add("animation_opacity");
           console.log(animateSection);
         } else {
-
         }
       }
      }
- 
     function isPartiallyVisible(el) {
       var elementBoundary = el.getBoundingClientRect();
- 
       var top = elementBoundary.top;
       var bottom = elementBoundary.bottom;
       var height = elementBoundary.height;
- 
       return ((top + height >= 0) && (height + window.innerHeight >= bottom));
     }
- 
     function isFullyVisible(el) {
       var elementBoundary = el.getBoundingClientRect();
- 
       var top = elementBoundary.top;
-      var bottom = elementBoundary.bottom;
- 
+      var bottom = elementBoundary.bottom; 
       return ((top >= 0) && (bottom <= window.innerHeight));
     }
-
 let menuState = false;
 
 $('.menu_btn').click(function () {
@@ -67,10 +67,10 @@ $('.menu_btn').click(function () {
 	$('.map_wrapper').css({'z-index': '20'})
     $('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
   	$('.menu_btn > span').css({'transform': 'rotate(90deg)'})
-	  $('.menu_btn > span').css({'opacity': '0'})
-	  $('.menu_btn > span').css({'transition': 'all 1s ease-in-out'})
-	  $('.map_close > span').css({'transform': 'rotate(135deg)'})
-	  $('.map_close > span').css({'transition': 'all 1s ease-in-out'})
+	$('.menu_btn > span').css({'opacity': '0'})
+	$('.menu_btn > span').css({'transition': 'all 1s ease-in-out'})
+	$('.map_close > span').css({'transform': 'rotate(135deg)'})
+	$('.map_close > span').css({'transition': 'all 1s ease-in-out'})
   }
 })
 
@@ -78,13 +78,13 @@ $('.map_close').click(function () {
   menuState = !menuState;
   if (!menuState) {
     $('.map_wrapper').css({'opacity': '0'})
-	  $('.map_wrapper').css({'z-index': '0'})
-	  $('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
-	  $('.menu_btn > span').css({'transform': 'rotate(0deg)'})
-	  $('.menu_btn > span').css({'opacity': '1'})
-	  $('.menu_btn > span').css({'transition': 'all 1s ease-in-out'})
-	  $('.map_close > span').css({'transform': 'rotate(45deg)'})
-	  $('.map_close > span').css({'transition': 'all 1s ease-in-out'})
+	$('.map_wrapper').css({'z-index': '0'})
+	$('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
+	$('.menu_btn > span').css({'transform': 'rotate(0deg)'})
+	$('.menu_btn > span').css({'opacity': '1'})
+	$('.menu_btn > span').css({'transition': 'all 1s ease-in-out'})
+	$('.map_close > span').css({'transform': 'rotate(45deg)'})
+	$('.map_close > span').css({'transition': 'all 1s ease-in-out'})
   }
 })
 
@@ -92,13 +92,13 @@ $('.map_item').click(function () {
   menuState = !menuState;
   if (!menuState) {
     $('.map_wrapper').css({'opacity': '0'})
-	  $('.map_wrapper').css({'z-index': '0'})
-	  $('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
-	  $('.menu_btn > span').css({'transform': 'rotate(0deg)'})
-	  $('.menu_btn > span').css({'opacity': '1'})
-	  $('.menu_btn > span').css({'transition': 'all 1s ease-in-out'})
-	  $('.map_close > span').css({'transform': 'rotate(45deg)'})
-	  $('.map_close > span').css({'transition': 'all 1s ease-in-out'})
+	$('.map_wrapper').css({'z-index': '0'})
+	$('.map_wrapper').css({'transition': 'all 1s ease-in-out'})
+	$('.menu_btn > span').css({'transform': 'rotate(0deg)'})
+	$('.menu_btn > span').css({'opacity': '1'})
+	$('.menu_btn > span').css({'transition': 'all 1s ease-in-out'})
+	$('.map_close > span').css({'transform': 'rotate(45deg)'})
+	$('.map_close > span').css({'transition': 'all 1s ease-in-out'})
   }
 })
 

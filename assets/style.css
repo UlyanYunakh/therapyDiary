@@ -345,7 +345,7 @@ nav {
 
 .stat-section h1 {
 	margin: 0 30px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	font-size: 48px;
 	font-weight: 600;
 	border-bottom: 1px solid white;
@@ -355,9 +355,13 @@ nav {
 	border-bottom: none;
 }
 
+.stat-bg p {
+	padding-bottom: 40px;
+}
+
 .stat-section p {
 	margin: 0;
-	padding-bottom: 40px;
+	padding: 5px 0 40px;
 	font-size: 22px;
 }
 

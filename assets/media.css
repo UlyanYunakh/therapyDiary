@@ -76,7 +76,7 @@
 	}
 	
 	.stat-section {
-		margin: 100px 0 30px;
+		margin: 100px 0 10px;
 		padding: 30px 0 30px;
 		background-color: #313342;
 	}
@@ -87,7 +87,7 @@
 	
 	.stat-section h1 {
 		margin: 0 100px;
-		padding-bottom: 8px;
+		padding-bottom: 0;
 	}
 	
 	.stat-bg h1 {
@@ -238,7 +238,7 @@
 
 @media (max-width: 767px){	
 	.stat-section {
-		margin: 80px 0 10px;
+		margin-top: 80px;
 	}
 
 	.logo_img img {

@@ -59,10 +59,10 @@ footer a:hover {
 }
 
 .section_text-container h1 {
-	font-family: 'Cambria';
 	font-size: 3em;
-	font-weight: 700;
 	color: #313342;
+	font-family: Gilroy;
+	font-weight: 600;
 }
 
 .section_text-container h2 {
@@ -95,6 +95,7 @@ footer a:hover {
 .btn_download {
 	background-color: #fff;
 	font-family: "Gilroy";
+	font-weight: 600;
 	border: 1px solid #fff;
 	transition: all 0.7s 0.1s ease-in-out;
 }
@@ -120,10 +121,6 @@ footer a:hover {
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
-}
-
-.download-section .btn_utp {
-	animation-duration: 5s;
 }
 
 .main_thans-diary {
@@ -152,13 +149,6 @@ footer a:hover {
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
-
-.download-section .btn_utp:hover {
-	animation-name: gradient_download;
-	animation-duration: 5s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-}
     
 @keyframes gradient {
 	0% {
@@ -177,16 +167,6 @@ footer a:hover {
 	
 	to {
 		background-position: 0% 20%;
-	}
-}
-
-@keyframes gradient_download {
-	0% {
-		background-position: 0% 10%;
-	}
-	
-	to {
-		background-position: 100%;
 	}
 }
 
@@ -309,6 +289,8 @@ nav {
 }
 
 .map_container {
+	position: relative;
+    left: 10px;
     padding-top: 30px;
 }
 
@@ -346,19 +328,52 @@ nav {
 	left: -120px;
 }
 
-.download-section {
-	padding: 125px 0 100px;
-	text-align:center;
+.stat-section {
+	padding: 120px 0 60px;
+	text-align: center;
+	font-family: Gilroy;
+	color: white;
 }
 
-.download-section h2 {
-	font-family: 'Cambria';
+.stat-bg:before {
+	content: url(img/background/stat-block.png);
+	position: absolute;
+	z-index: -100;
+    left: -205px;
+    top: -141px;
+}
+
+.stat-section h1 {
+	margin: 0 30px;
+	padding-bottom: 20px;
+	font-size: 48px;
 	font-weight: 600;
+	border-bottom: 1px solid white;
 }
 
-.download-section p {
-	font-size: 2em;
-	font-family: "Gilroy";
+.stat-bg h1 {
+	border-bottom: none;
+}
+
+.stat-section p {
+	margin: 0;
+	padding-bottom: 40px;
+	font-size: 22px;
+}
+
+.download-section {
+	text-align: center;	
+	font-family: Gilroy;
+	padding: 50px 0 100px;
+}
+
+.download-section h1 {
+	margin: 0;
+	padding-bottom: 35px;
+}
+
+.download-section img {
+	width: 300px;
 }
 
 /* footer styles */

@@ -35,6 +35,11 @@
 }
 
 @media (max-width: 1200px){
+	.stat-bg:before {
+		left: -254px;
+		top: -120px;
+	}
+	
 	.header_utp {
 		padding: 25px 50px 60px;
 	}
@@ -66,6 +71,37 @@
 }
 
 @media (max-width: 991px){
+	.stat-bg:before {
+		display: none;
+	}
+	
+	.stat-section {
+		margin: 100px 0 30px;
+		padding: 30px 0 30px;
+		background-color: #313342;
+	}
+	
+	.stat-section p {
+		padding-bottom: 20px;
+	}
+	
+	.stat-section h1 {
+		margin: 0 100px;
+		padding-bottom: 8px;
+	}
+	
+	.stat-bg h1 {
+		margin: 0;
+	}
+	
+	.download-section {
+		padding: 50px 0 60px;
+	}
+	
+	.download-section img {
+		width: 250px;
+	}
+	
 	.btn_utp {
 		padding: 16px 18px;
 		font-size: 1em;
@@ -141,7 +177,7 @@
 		top: -290px;
 	}
 	
-	.section_text-container h1 {
+	.section_text-container h1, .stat-section h1, .download-section h1  {
 		font-size: 2em;
 	}
 
@@ -150,17 +186,8 @@
 		margin: 15px 0 20px;
 	}
 
-	.section_text-container p {
+	.section_text-container p, .stat-section p {
 		font-size: 1em;
-	}
-	
-	
-	.download-section h2 {
-		font-size: 1.5em;
-	}
-
-	.download-section p {
-		font-size: 1.2em;
 	}
 	
 	.row {
@@ -210,6 +237,10 @@
 
 
 @media (max-width: 767px){	
+	.stat-section {
+		margin: 80px 0 10px;
+	}
+
 	.logo_img img {
 		width: 100px;
 	}
@@ -366,10 +397,6 @@
 		padding: 50px 0;
 	}
 	
-	.download-section {
-		padding: 50px 0;
-	}
-	
 	.right-background:before {
 		display: none;
 	}
@@ -399,7 +426,40 @@
 	}
 }
 
+@media (max-width: 682px) {
+	.map:before {
+		right: -400px;
+	}
+	
+	.map {
+		position: relative;
+		right: 0;
+		padding-top: 20px;
+	}
+}
+
 @media (max-width: 575px){
+	.map_container {
+		left: 0;
+	}
+	
+	.stat-section h1 {
+		margin: 0;
+	}
+	
+	.download-section {
+		padding: 30px 0 40px;
+	}
+	
+	.download-section h1 {
+		padding-bottom: 15px;
+	}
+	
+	.download-section img {
+		width: 200px;
+		margin: 5px 0;
+	}
+	
 	.main_info img:nth-child(1) {
 		display: none;
 	}
@@ -626,6 +686,12 @@
 @media (min-width: 1500px){
 	.container {
 		max-width: 1400px;
+	}
+	
+	.stat-bg:before {
+		transform: scale(1.1);
+		top: -155px;
+		left: -37px;
 	}
 }
 

@@ -39,7 +39,6 @@ var isScrolling = false;
         var animateSection = animateSections[i];
         if (isPartiallyVisible(animateSection)) {
           animateSection.classList.add("animation_opacity");
-          console.log(animateSection);
         } else {
         }
       }
@@ -62,7 +61,6 @@ let menuState = false;
 $('.menu_btn').click(function () {
   menuState = !menuState;
   if (menuState) {
-    console.log('work');
     $('.map_wrapper').css({'opacity': '1'})
 	$('.map_wrapper').css({'z-index': '20'})
     $('.map_wrapper').css({'transition': 'all 1s ease-in-out'})

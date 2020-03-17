@@ -39,7 +39,7 @@ var isScrolling = false;
       for (var i = 0; i < animateSections.length; i++) {
         var animateSection = animateSections[i];
         if (isPartiallyVisible(animateSection)) {
-			animateSection.classList.add("animation_opacity");
+			    animateSection.classList.add("animation_opacity");
         }
       }
      }
@@ -61,7 +61,6 @@ let menuState = false;
 $('.menu_btn').click(function () {
   menuState = !menuState;
   if (menuState) {
-    console.log('work');
     $('.map_wrapper').css({'opacity': '1'})
 	$('.map_wrapper').css({'z-index': '20'})
     $('.map_wrapper').css({'transition': 'all 1s ease-in-out'})

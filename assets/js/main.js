@@ -11,15 +11,18 @@ $(window).scroll(function(e){
 	if ( scrolled > 555 && scrolled <= 1250) $('.main_wish-diary-bg img:nth-child(2)').css('top', -100-(scrolled * 0.2) + 'px');
 	if ( scrolled > 1300 && scrolled <= 2070) $('.main_action-fear-diary-bg img:nth-child(2)').css('top', 100-(scrolled * 0.2) + 'px');
 	if ( scrolled > 2070) $('.main_diary-of-emotions-bg img:nth-child(2)').css('top', 200-(scrolled * 0.2) + 'px');
-	
-    let photos = document.querySelectorAll('.main_info');
-	for (var i = 0; i < animateSections.length; i++) {
-        var photo = photos[i];
-		var child = photo.querySelector('img:nth-child(1)');
-		console.log(photo);
-		if (isPartiallyVisible(photo)) {
-		}
-	}
+    let section1 = document.querySelector('.main_info .main_thans-diary-bg');
+	var child1 = document.querySelector('.main_thans-diary-bg img:nth-child(1)');
+	let section2 = document.querySelector('.main_info .main_wish-diary-bg');
+	var child2 = document.querySelector('.main_wish-diary-bg img:nth-child(1)');
+	let section3 = document.querySelector('.main_info .main_action-fear-diary-bg');
+	var child3 = document.querySelector('.main_action-fear-diary-bg img:nth-child(1)');
+	let section4 = document.querySelector('.main_info .main_diary-of-emotions-bg');
+	var child4 = document.querySelector('.main_diary-of-emotions-bg img:nth-child(1)');
+	if (isPartiallyVisible(section1)) $(child1).css('top', 180-(scrolled * 0.2) + 'px');
+	if (isPartiallyVisible(section2)) $(child2).css('top', 300-(scrolled * 0.2) + 'px');
+	if (isPartiallyVisible(section3)) $(child3).css('top', 450-(scrolled * 0.2) + 'px');
+	if (isPartiallyVisible(section4)) $(child4).css('top', 600-(scrolled * 0.2) + 'px');
 });
 
 var isScrolling = false;

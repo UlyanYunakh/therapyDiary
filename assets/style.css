@@ -96,6 +96,7 @@ footer a:hover {
 	font-weight: 600;
 	border: 1px solid #fff;
 	transition: all 0.7s 0.1s ease-in-out;
+	padding-top: 11px;
 }
 
 .btn_download:focus, .btn_download:hover, .btn_download:active {
